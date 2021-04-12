@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="newsurvey.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>New Survey</title>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="container">
+        <!-- body container begins above  -->
+        
+
+        <!-- NAVBAR  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Surveys.ltd</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Community</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Previous Surveys
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Wildlife</a></li>
+                      <li><a class="dropdown-item" href="#">Climate change</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Politics</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <!-- NAVBAR ENDS  -->
+
+
+        <h1 class="display-1 text-center">New Survey Form</h1>              
+        <h1 class="display-6 text-center">Thank you for taking the time to help us improve the platform</h1>
+
+        <form>
+            <div class="mb-3">
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="Name" aria-describedby="Name">               
+              </div>
+
+              <div class="mb-3">
+                <label for="Age" class="form-label">Age (optional)</label>
+                <input type="text" class="form-control" id="Age" aria-describedby="Age">               
+              </div>
+
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            
+            <label for="Role">Which option best describes your current role?</label>
+            <select id="Role" class="form-select" aria-label="Default select example">
+                <option selected disabled>Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Full time job">Full time job</option>
+                <option value="Part time job">Part time job</option>
+              </select>
+
+              <!-- RECOMMEND  -->
+
+                        
+                        <div class="my-3" id="recommend">
+                            <label for="recommend">Would you recommend us to a friend?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Recommend" id="Yes">
+                                <label class="form-check-label" for="Yes">
+                                Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Recommend" id="No" checked>
+                                <label class="form-check-label" for="No">
+                                No
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Recommend" id="Maybe" checked>
+                                <label class="form-check-label" for="Maybe">
+                                Maybe
+                                </label>
+                            </div>
+                        </div>
+
+                <!-- Favourite Feature  -->
+                    <div class="my-3">
+                        <label for="Feature">What is your favorite feature?</label>
+                        <select id="Feature" class="form-select" aria-label="Default select example">
+                            <option selected disabled>Select favourite feature</option>
+                            <option value="Community">Community</option>
+                            <option value="Web support">Web support</option>
+                            <option value="Challenges">Challenges</option>
+                        </select>
+                    </div>
+                <!-- Improvements  -->
+                    
+                    <div id="improve" class="my-3">
+                        <label for="improve">What would you like to see improved? (Check all that apply)</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Data Visualization" id="Data Visualization">
+                            <label class="form-check-label" for="Data Visualization">
+                                Data Visualization
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Videos" id="Videos">
+                            <label class="form-check-label" for="Videos">
+                                Videos
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Forum" id="Forum">
+                            <label class="form-check-label" for="Forum">
+                                Forum
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Additional Courses" id="Additional Courses">
+                            <label class="form-check-label" for="Additional Courses">
+                                Additional Courses
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Comments  -->
+
+                    <div class="form-group my-3">
+                        <label for="exampleFormControlTextarea1">Any comments or suggestions?</label>
+                        <textarea placeholder="Enter your comments here..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+
+            <button type="submit" class="btn btn-primary my-3">Submit</button>
+          </form>
+
+
+        <!-- body container ends below  -->
+    </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
